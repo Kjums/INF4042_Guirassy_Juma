@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#0066FF" >
+
+    <EditText
+        android:id="@+id/etvValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Entrer un nombre"
+        android:inputType="number"
+        android:background="@android:color/background_light">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/etvValue"
+        android:text="Click" />
+
+    <Chronometer
+        android:id="@+id/cmMeter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/btnClick"
+        android:text="Timer"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/cmMeter"
+        android:textColor="#FFFFFF"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
